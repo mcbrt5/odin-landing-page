@@ -4,24 +4,36 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* MARGIN */
+
+.margin{
+    flex-basis: 200px;
+}
+
+/* HEADER */
 
 .header-container{
     display: flex;
     justify-content: center;
 }
 
-.header-left-margin,
-.header-right-margin{
+.header-container .margin{
     background-color: #1F2937;
-    flex-basis: 200px;
 }
 
-.header-logo{
+.header div:nth-child(1){
     font-size: 24px;
     color: #F9FAF8;
 }
 
+#logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 0;
+}
 
 .header{
     display: flex;
@@ -42,16 +54,16 @@ ul{
     color: #E5E7EB;
 }
 
+/* SECTION ONE */
+
 .section-one-container{
     display: flex;
     justify-content: center;
     flex: 1;
 }
 
-.section-one-left-margin,
-.section-one-right-margin{
+.section-one-container .margin{
     background-color: #1F2937;
-    flex-basis: 200px;
 }
 
 .section-one{
@@ -65,15 +77,17 @@ ul{
     padding: 50px 0;
 }
 
-.section-one-title{
+.section-one h1{
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
+    margin-bottom: 0;
 }
 
-.section-one-content{
+.section-one p{
     font-size: 18px;
     color: #E5E7EB;
+    margin: 0;
 }
 
 
@@ -86,30 +100,33 @@ ul{
     font-size: 18px;
 }
 
-.section-one-left{
+.section-one div:nth-child(1){
     flex-basis: 400px;
     flex-direction: column;
     gap: 10px;
     display: flex;
 }
 
+#front {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
 
-.section-one-right{
-    padding: 50px 100px;
+.section-one div:nth-child(2){
+    height: 400px;
+    width: 1000px;
     background-color: grey;
     font-size: 18px;
     color: #E5E7EB;
 }
 
+/* SECTION TWO */
+
 .section-two-container{
     display: flex;
     justify-content: center;
     flex: 1;
-}
-
-.section-two-left-margin,
-.section-two-right-margin{
-    flex-basis: 200px;
 }
 
 .section-two{
@@ -121,46 +138,53 @@ ul{
     padding: 50px 0;
 }
 
-.section-two-title{
+.section-two h1{
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
     padding-bottom: 50px;
 }
 
-.section-two-content{
+.section-two > div{
     display: flex;
     justify-content: space-evenly;
     gap: 50px;
 }
 
-.section-two-element{
+.section-two > div > div{
     display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.section-two-box{
-    border: 1px solid #3882F6;
-    border-radius: 16px;
-    display: flex;
-    width: 150px;
-    height: 150px;
     justify-content: center;
 }
 
-.section-two-text{
+.section-two > div > div > div{
+    border: 1px solid #3882F6;
+    border-radius: 16px;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.section-two p{
     max-width: 200px;
     text-align: center;
     font-size: 18px;
     color: #1F2937;
     padding: 10px 0;
+    margin: 0;
 }
 
-
-.section-two-element{
-    display: flex;
-    flex-direction: column;
-}
+/* SECTION THREE */
 
 .section-three-container{
     display: flex;
@@ -168,8 +192,7 @@ ul{
     flex: 1;
 }
 
-.section-three-left-margin,
-.section-three-right-margin{
+.section-three-container .margin{
     background-color: #E5E7EB;
     flex-basis: 300px;
 }
@@ -184,16 +207,17 @@ ul{
     padding: 50px 0;
 }
 
-.section-three-text{
+.section-three p:nth-child(1){
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
     font-weight: 300;
     text-align: justify;
     padding: 25px 0;
+    margin-bottom: 0;
 }
 
-.section-three-signing{
+.section-three p:nth-child(2){
     font-size: 18px;
     font-weight: bolder;
     color: #1F2937;
@@ -201,15 +225,12 @@ ul{
     margin-right: 50px;
 }
 
+/* SECTION FOUR */
+
 .section-four-container{
     display: flex;
     justify-content: space-between;
     flex: 1;
-}
-
-.section-four-left-margin,
-.section-four-right-margin{
-    flex-basis: 200px;
 }
 
 .section-four{
@@ -220,7 +241,7 @@ ul{
     flex: 1; 
 }
 
-.section-four-border{
+.section-four-container > div > div{
     background-color: #3882F6;
     border-radius: 16px;
     display: flex;
@@ -231,15 +252,18 @@ ul{
     padding: 50px 0;
 }
 
-.section-four-message{
+.section-four-container p:nth-child(2){
     margin-left: 150px;
-    font-size: 22px;
+    font-size: 18px;
     color: #E5E7EB;
+    margin-top: 0;
 }
 
-.section-four-title{
+.section-four-container p:nth-child(1){
     font-size: 24px;
     color: #F9FAF8;
+    margin-left: 150px;
+    margin-bottom: 0;
 }
 
 .section-four button{
@@ -250,6 +274,8 @@ ul{
     margin-right: 150px;
     font-size: 18px;
 }
+
+/* FOOTER */
 
 .footer{
     display: flex;
