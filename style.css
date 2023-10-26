@@ -1,0 +1,262 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+}
+
+.header-left-margin,
+.header-right-margin{
+    background-color: #1F2937;
+    flex-basis: 200px;
+}
+
+.header-logo{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2937;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.section-one-container{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.section-one-left-margin,
+.section-one-right-margin{
+    background-color: #1F2937;
+    flex-basis: 200px;
+}
+
+.section-one{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F2937;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.section-one-title{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.section-one-content{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+
+.section-one button{
+    background-color: #3882F6;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 0;
+    width: 125px;
+    font-size: 18px;
+}
+
+.section-one-left{
+    flex-basis: 400px;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+}
+
+
+.section-one-right{
+    padding: 50px 100px;
+    background-color: grey;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.section-two-container{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.section-two-left-margin,
+.section-two-right-margin{
+    flex-basis: 200px;
+}
+
+.section-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    padding: 50px 0;
+}
+
+.section-two-title{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    padding-bottom: 50px;
+}
+
+.section-two-content{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.section-two-element{
+    display: flex;
+    align-items: center;
+}
+
+.section-two-box{
+    border: 1px solid #3882F6;
+    border-radius: 16px;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+}
+
+.section-two-text{
+    max-width: 200px;
+    text-align: center;
+    font-size: 18px;
+    color: #1F2937;
+    padding: 10px 0;
+}
+
+
+.section-two-element{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-three-container{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.section-three-left-margin,
+.section-three-right-margin{
+    background-color: #E5E7EB;
+    flex-basis: 300px;
+}
+
+.section-three{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #E5E7EB;
+    flex: 1;
+    padding: 50px 0;
+}
+
+.section-three-text{
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: 300;
+    text-align: justify;
+    padding: 25px 0;
+}
+
+.section-three-signing{
+    font-size: 18px;
+    font-weight: bolder;
+    color: #1F2937;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.section-four-container{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.section-four-left-margin,
+.section-four-right-margin{
+    flex-basis: 200px;
+}
+
+.section-four{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    flex: 1; 
+}
+
+.section-four-border{
+    background-color: #3882F6;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin: 100px 0;
+    padding: 50px 0;
+}
+
+.section-four-message{
+    margin-left: 150px;
+    font-size: 22px;
+    color: #E5E7EB;
+}
+
+.section-four-title{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.section-four button{
+    background-color: #3882F6;
+    border-radius: 6px;
+    padding: 5px 20px;
+    border: 1px solid #E5E7EB;
+    margin-right: 150px;
+    font-size: 18px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #1F2937;
+    padding: 5px;
+    font-size: 18px;
+    color: #E5E7EB;
+}
